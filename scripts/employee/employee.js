@@ -1,9 +1,9 @@
-export const Employee = (employeeObject, computerObject, departmentObject, locationObject) => {
+export const Employee = (employeeObject, computerObject, departmentObject, locationObject, assignedCustomers) => {
     return `
         <div class="employee">
             <header class="employee__name">
                 <h2>${employeeObject.firstName} ${employeeObject.lastName}</h2>
-                <div>${employeeObject.age}</div>
+                <div> age: ${employeeObject.age}</div>
             </header>
             <section class="employee__computer">
                 <div>Current computer: ${computerObject.year} ${computerObject.model}</div>
@@ -14,5 +14,13 @@ export const Employee = (employeeObject, computerObject, departmentObject, locat
             <section class="employee__location">
                 <div> Works at ${locationObject.city} location</div>
             </section>
+            <section class="employee__customers">
+                Has worked for the following customers:
+                <ul>
+                    <li>${assignedCustomers[0].name}</li>
+                    <li>${assignedCustomers[1].name}</li>
+                </ul>
+            </section>
+        </div>
     `  
 }
