@@ -6,7 +6,7 @@ export const useComputers = () => {
 }
 
 export const getComputers = () => {
-    return fetch("http://localhost:9000/computers")
+    return fetch("http://localhost:8000/computers")
         .then(response => response.json())
         .then(
             (parsedComputers) => {

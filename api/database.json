@@ -1,4 +1,132 @@
 {
+   "customers": [
+        {
+            "id": 1,
+            "name": "Nashville Software School"
+        },
+        {
+            "id": 2,
+            "name": "Juniper Distribution"
+        },
+        {
+            "id": 3,
+            "name": "Squarespace"
+        },
+        {
+            "id": 4,
+            "name": "Wix"
+        }
+   ],
+
+   "employeeCustomers": [
+        {
+            "id": 1,
+            "customerId": 1,
+            "employeeId": 1
+        },
+
+        {
+            "id": 2,
+            "customerId": 1,
+            "employeeId": 2
+        },
+
+        {
+            "id": 3,
+            "customerId": 3,
+            "employeeId": 3
+        },
+
+        {
+            "id": 4,
+            "customerId": 4,
+            "employeeId": 4
+        },
+
+        {
+            "id": 5,
+            "customerId": 1,
+            "employeeId": 5
+        },
+
+        {
+            "id": 6,
+            "customerId": 2,
+            "employeeId": 1
+        },
+
+        {
+            "id": 7,
+            "customerId": 3,
+            "employeeId": 2
+        },
+
+        {
+            "id": 8,
+            "customerId": 4,
+            "employeeId": 3
+        },
+
+        {
+            "id": 9,
+            "customerId": 2,
+            "employeeId": 4
+        },
+
+        {
+            "id": 10,
+            "customerId": 2,
+            "employeeId": 5
+        }
+
+    ],
+   
+    "locations": [
+        {
+            "id": 1,
+            "city": "Nashville"
+        },
+
+        {
+            "id": 2,
+            "city": "Atlanta"
+        },
+
+        {
+            "id": 3,
+            "city": "Memphis"
+        }
+
+    ],
+
+    "departments": [
+        {
+            "id": 1,
+            "department": "Accounting"
+        },
+
+        {
+            "id": 2,
+            "department": "Sales"
+        },
+
+        {
+            "id": 3,
+            "department": "Quality Assurance"
+        },
+
+        {
+            "id": 4,
+            "department": "IT "
+        },
+
+        {
+            "id": 4,
+            "department": "IT "
+        }
+
+    ],
+
     "computers": [
         {
             "id": 1,
@@ -35,10 +163,12 @@
     "employees": [
         {
             "id": 1,
-            "firstName": "Rainu",
-            "lastName": "Ittycheriah",
+            "firstName": "Jenna",
+            "lastName": "Maroney",
             "computerId": 1,
-            "age": 27
+            "age": 40,
+            "departmentId": 1,
+            "cityId" : 1
         },
 
         {
@@ -46,7 +176,9 @@
             "firstName": "Liz",
             "lastName": "Lemon",
             "computerId": 2,
-            "age": 35
+            "age": 35,
+            "departmentId": 2,
+            "cityId" : 1
         },
 
         {
@@ -54,7 +186,9 @@
             "firstName": "Kenneth",
             "lastName": "Parcell",
             "computerId": 3,
-            "age": 52
+            "age": 52,
+            "departmentId": 3,
+            "cityId" : 1
         },
 
         {
@@ -62,14 +196,18 @@
             "firstName": "Tracy",
             "lastName": "Jordan",
             "computerId": 4,
-            "age": 45
+            "age": 45,
+            "departmentId": 4,
+            "cityId" : 2
         },
         {
             "id": 5,
             "firstName": "Jack",
             "lastName": "Donaghy",
             "computerId": 5,
-            "age": 55
+            "age": 55,
+            "departmentId": 4,
+            "cityId" : 3
         }
     ]
 }
