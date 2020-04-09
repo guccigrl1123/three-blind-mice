@@ -16,9 +16,11 @@ export const Employee = (employeeObject, computerObject, departmentObject, locat
             </section>
             <section class="employee__customers">
                 Has worked for the following customers:
-                <ul>
-                    <li>${assignedCustomers[0].name}</li>
-                    <li>${assignedCustomers[1].name}</li>
+                <ul>${
+                    assignedCustomers.map(assignedCustomer=> {
+                        return `<li>${assignedCustomer.name}</li>`}
+                        ).join(" ")
+                        }
                 </ul>
             </section>
         </div>

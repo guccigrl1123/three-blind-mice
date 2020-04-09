@@ -40,7 +40,6 @@ const render = employeesToRender => {
                 return customers.find(customer => rel.customerId === customer.id)
 
                 })
-
             return Employee(employeeObject, foundComputer, foundDepartment, foundLocation, assignedCustomers)
         }
     ).join("")
